@@ -1,0 +1,17 @@
+.RollDie-die {
+  display: flex;
+}
+
+.RollDie button {
+  width: 8rem;
+  padding: 1rem;
+  border: 0px;
+  border-radius: 1rem;
+  color: white;
+  background-color: darkslateblue;
+  margin-top: 3rem;
+}
+
+.RollDie button:hover {
+  background-color: black;
+}
