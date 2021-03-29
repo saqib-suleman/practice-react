@@ -22,11 +22,16 @@ class RollDie extends Component {
     const newDie2 = this.props.sides[
       Math.floor(Math.random() * this.props.sides.length)
     ];
-    this.setState({ die1: newDie1, die2: newDie2, rolling: true });
+
+    this.setState({ rolling: true });
+
+    setTimeout(() => {
+      this.setState({ die1: newDie1, die2: newDie2 });
+    }, 600);
 
     setTimeout(() => {
       this.setState({ rolling: false });
-    }, 1000);
+    }, 850);
   };
 
   render() {
