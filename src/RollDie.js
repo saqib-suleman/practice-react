@@ -36,10 +36,10 @@ class RollDie extends Component {
     return (
       <div className="RollDie">
         <div className="RollDie-dies">
-          <Die face={this.state.die1} />
-          <Die face={this.state.die2} />
+          <Die face={this.state.die1} rolling={this.state.rolling} />
+          <Die face={this.state.die2} rolling={this.state.rolling} />
         </div>
-        <button onClick={this.roll}>
+        <button onClick={this.roll} disabled={this.state.rolling}>
           {this.state.rolling ? "Rolling..." : "Roll Dice"}
         </button>
       </div>
