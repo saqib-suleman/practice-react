@@ -7,6 +7,7 @@ class App3 extends Component {
     return (
       <div className="App">
         <Lottery />
+        <Lottery title={"Mini Daily"} numBall={4} maxNum={10} />
       </div>
     );
   }

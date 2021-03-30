@@ -3,11 +3,7 @@ import "./LottoBall.css";
 
 class LottoBall extends Component {
   render() {
-    return (
-      <div className="LottoBall">
-        <h3 className="LottoBall-num">{this.props.num}</h3>
-      </div>
-    );
+    return <div className="LottoBall">{this.props.num}</div>;
   }
 }
 
