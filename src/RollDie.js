@@ -35,9 +35,6 @@ class RollDie extends Component {
   };
 
   render() {
-    // let rand1 = Math.floor(Math.random() * 6);
-    // let rand2 = Math.floor(Math.random() * 6);
-    // const dies = ["one", "two", "three", "four", "five", "six"];
     return (
       <div className="RollDie">
         <div className="RollDie-dies">
